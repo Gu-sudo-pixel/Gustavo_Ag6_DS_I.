@@ -1,29 +1,20 @@
-# projetos
-consumo_energia
+Gustavo_Ag6_DS_I.
+# Sistema de desconto progressivo
 
-print = input("digite a potência do aparelho em watts: ")
-aparelho = float(input("digite o aparelho tarifaria (geladeira/televisao/microondas): "))
-print = input("digite tempo médio de uso diário em horas: ")
-print = input("Calcule o consumo mensal em kWh, usando a fórmula: consumoMensal = (potencia * horasDia * 30) / 1000: ")
-print("converte os watts em real: ")
+valor = float(input("Digite o valor total da compra: R$ "))
 
+if valor < 200:
+    desconto = 0.05
+elif valor < 300:
+    desconto = 0.10
+else:
+    desconto = 0.15
 
+valor_desconto = valor * desconto
+valor_final = valor - valor_desconto
 
-if (aparelho == "geladeira"):
-    consumomensal <=300
-    valorbase = consumomensal * 150
-elif (aparelho == "televisão"):
-    consumomensal <=200
-    valorbase = consumomensal * 120
-elif (aparelho == "microondas"):
-    consumomensal <=800
-    valorbase = consumomensal * 4,100
-
-    # calculando o total
-    convertendo = watts * dinhero
-
-    print("watts")
-    print(f"consumobase {consumobase}")
-    print(f"valorbase {valorbase}")
-    print(f"valor fixo {valortotal}")
-    print(f"convertido {resultado}")
+print("\n--- RESUMO DA COMPRA ---")
+print(f"Valor da compra: R$ {valor:.2f}")
+print(f"Desconto: {desconto * 100:.0f}%")
+print(f"Valor do desconto: R$ {valor_desconto:.2f}")
+print(f"Valor final: R$ {valor_final:.2f}")
