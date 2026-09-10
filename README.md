@@ -1,4 +1,3 @@
-Gustavo_Ag6_DS_I.
 # Sistema de desconto progressivo
 
 valor = float(input("Digite o valor total da compra: R$ "))
